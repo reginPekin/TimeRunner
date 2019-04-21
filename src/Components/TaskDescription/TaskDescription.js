@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./TaskDescription.module.css";
 import {TaskProgress} from "../TaskProgress/index"
 
-function TaskDescription(props){
+export const TaskDescription = (props) => {
     return(
         <div className = {styles.task_description}>
             <div className={styles.task_name}>
