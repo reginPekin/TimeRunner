@@ -2,7 +2,7 @@ import React from "react";
 import {TaskDescription} from "../TaskDescription/index"
 
 
-export const App = (props) => {
+export const Board = (props) => {
     return (
     <div>
         {props.tasks.map(task => {
