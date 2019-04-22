@@ -8,6 +8,7 @@ export const Task = (props) => {
         <div className = {styles.task}> 
             <TaskDescription task = {props.task}/>
             <TaskCountdown task = {props.task}/>
+            <button onClick={props.onDelete}>Delete</button>
         </div>
     );
 }
