@@ -8,7 +8,7 @@ export const TaskDescription = (props) => {
             <div className={styles.task_name}>
                 <p>{props.task.name}</p>
             </div>
-            <TaskProgress tasky = {props.task} />
+            <TaskProgress task = {props.task} />
         </div>
         
     );

@@ -3,7 +3,7 @@ import styles from "./TaskProgress.module.css";
 
 export const TaskProgress = (props) => {
     return(
-        <div className={styles.task_progress} id={props.tasky.id}>
+        <div className={styles.task_progress} id={props.task.id}>
          {/* empty space */} в
         </div>
     );
