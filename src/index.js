@@ -4,25 +4,22 @@ import {Board} from "./Components/Board/index"
 
 const tasks = [
     {
+        id:1,
         name: "sketch",
         startTime: "April 22, 2019 23:39:00",
-        finishTime: "April 27, 2019 23:39:00",
-        id: "line0",
-        idCountdown: "task--countdown0"
+        finishTime: "April 27, 2019 23:39:00"
     },
     {
+        id:2,
         name: "line",
         startTime: "April 27, 2019 23:39:00",
-        finishTime: "May 2, 2019 23:39:00",
-        id: "line1",
-        idCountdown: "task--countdown1"
+        finishTime: "May 2, 2019 23:39:00"
     },
     {
+        id:3,
         name: "color",
         startTime: "May 2, 2019 23:39:00",
         finishTime: "May 5, 2019 23:39:00",
-        id: "line2",
-        idCountdown: "task--countdown2"
     },
 ]
 
