@@ -1,14 +1,15 @@
 import React from "react";
-import {TaskDescription} from "../TaskDescription/index"
-import styles from ""
+import {Task} from "../Task/index"
+import styles from "./Board.module.css"
 
 
 export const Board = (props) => {
     return (
-    <div className = {styles.board}>
-        {props.tasks.map(task => {
-            return <TaskDescription task={task} />;
-        })}
-    </div>
+    <article className = {styles.board}>
+            {props.tasks.map(task => {
+                return <Task task={task} />;
+            })}
+       
+    </article>
     );
 }

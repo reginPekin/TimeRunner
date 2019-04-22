@@ -10,5 +10,6 @@ export const TaskDescription = (props) => {
             </div>
             <TaskProgress tasky = {props.task} />
         </div>
+        
     );
 }
