@@ -1,0 +1,7 @@
+.board {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    margin: 0.5em 1em;
+    background-color: blueviolet;
+  }
