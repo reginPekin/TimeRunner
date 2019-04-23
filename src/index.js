@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import {Board} from "./Components/Board/index"
+import {Body} from "./Components/Body_Div/index"
 
 const tasks = [
     {
@@ -23,4 +23,4 @@ const tasks = [
     },
 ]
 
-ReactDOM.render(<Board tasks = {tasks}/>, document.getElementById('root'))
+ReactDOM.render(<Body tasks = {tasks}/>, document.getElementById('root'))
