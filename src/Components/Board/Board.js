@@ -2,7 +2,6 @@ import React from "react";
 import {Task} from "../Task/index"
 import styles from "./Board.module.css"
 
-const finishTime = "April 27, 2019 23:39:00"
 
 let minDate = ""
 let month = ""
@@ -22,23 +21,25 @@ export class Board extends React.Component {
       this.state = {
         tasks: this.props.tasks,
         value:"",
-        date:""
+        startDate:"",
+        finishDate: ""
        
       }
   }
 
   onChange = (event)  => this.setState({value: event.target.value})
-  onDateChange = (event)  => this.setState({date: event.target.value})
+  onDateChange = (event)  => this.setState({startDate: event.target.value})
+  onDateFinishChange = (event)  => this.setState({finishDate: event.target.value})
 
   onSubmit = (event) => {
     event.preventDefault() //не обновляй-ка
-    console.log(this.state.date)
+    console.log(this.state.startDate)
     
     const newTask = {
       id: this.state.tasks.length + 1,
       name: this.state.value,
-      startTime: finishTime,
-      finishTime: this.state.date
+      startTime: this.state.startDate,
+      finishTime: this.state.finishDate
     }
     this.setState({tasks: [ ...this.state.tasks, newTask]})
   }
@@ -71,8 +72,14 @@ export class Board extends React.Component {
           <input
             type="date"
             min = {minDate}
-            date={this.state.date} 
+            date={this.state.startDate} 
             onChange={event => this.onDateChange(event)}
+          />
+          <input
+            type="date"
+            min = {this.state.startDate}
+            date={this.state.finishDate} 
+            onChange={event => this.onDateFinishChange(event)}
           />
           <button onClick={event => this.onSubmit(event)} >Push</button>
         </form>
