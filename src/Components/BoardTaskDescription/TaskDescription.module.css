@@ -1,0 +1,14 @@
+.task_description{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 60%;
+  }
+  
+  .task_name {
+    flex: 4;
+    background-color: #DBBBBA;
+    color: #4D1510;
+    border-radius:20px;
+    margin-bottom: 3%;
+    font-family: Marion;
+  }

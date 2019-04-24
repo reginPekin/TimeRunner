@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import {Body} from "./Components/Body_Div/index"
+import {Body} from "./Components/BodyPrototype"
 
 const tasks = [
     {

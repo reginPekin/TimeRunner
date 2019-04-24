@@ -1,6 +1,6 @@
 import React from "react";
-import {Caption} from "../CaptionAllComponents/Caption/index"
-import {Board} from "../BoardAllComponents/Board/index"
+import {Caption} from "../Caption"
+import {Board} from "../Board"
 import styles from "./Container.module.css"
 
 export const Container = (props) => {
