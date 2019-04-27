@@ -1,4 +1,8 @@
-.board {
+article {
+  max-height: 67%;
+}
+
+article.board {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
@@ -12,4 +16,8 @@
     border-radius:20px;
     margin-bottom: 3%;
     font-family: Marion;
+  }
+
+  form {
+    margin-left: 1.5em
   }

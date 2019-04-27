@@ -1,10 +1,6 @@
-.body {
-  box-sizing: border-box;
-  padding: 0px;
-  margin: 0px;
-  font-family: 'Roboto';
-  font-size: 30px;
+.bodyProt {
   height: 100%;
+  width: 100%;
 }
 
 header {
