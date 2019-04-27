@@ -49,7 +49,7 @@ export class Board extends React.Component {
               />;
           })}
         </article>
-        <form >
+        <form>
           <input 
             className = {styles.task_name}
             type="text" 
@@ -57,20 +57,24 @@ export class Board extends React.Component {
             value = {this.state.value}
             onChange={event => this.onChange(event)}
           />
+          <br/>
+          
           <input
             type="date"
             min = {MinDate()}
             date={this.state.startDate} 
             onChange={event => this.onDateChange(event)}
           />
+          <br/>
           <input
             type="date"
             min = {this.state.startDate}
             date={this.state.finishDate} 
             onChange={event => this.onDateFinishChange(event)}
           />
+          <br/>
           <button onClick={event => this.onSubmit(event)} >Push</button>
-        </form>
+          </form>
       </div>
     );
   }
