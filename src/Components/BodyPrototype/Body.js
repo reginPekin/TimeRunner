@@ -4,7 +4,7 @@ import { Container } from "../Container";
 
 export const Body = (props) => {
   return(
-    <div className={styles.body}>
+    <div className={styles.bodyProt}>
       <header>
         <div>TimeFriend</div>
       </header>
