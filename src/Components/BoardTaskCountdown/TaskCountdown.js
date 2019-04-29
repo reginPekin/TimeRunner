@@ -1,14 +1,15 @@
 import React from "react";
 import styles from "./TaskCountdown.module.css"
+import {dateCountDown} from "../../Utils/dateCountDown"
 
 
 export class TaskCountdown extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            finishTime: new Date(props.task.finishTime).getTime(),
-            startTime: new Date(props.task.startTime).getTime(),
-            date: new Date(props.task.finishTime).getTime() - new Date().getTime()
+            finishTime: new Date(props.task.finishTime),
+            startTime: new Date(props.task.startTime),
+            date: new Date(props.task.finishTime) - new Date()
         }
     
     }
@@ -26,7 +27,7 @@ export class TaskCountdown extends React.Component {
 
     tick() {
         this.setState({
-            date: this.state.finishTime - new Date().getTime()
+            date: this.state.finishTime - new Date()
         })
     }
 
@@ -38,7 +39,7 @@ export class TaskCountdown extends React.Component {
                 " finish time: " + this.state.finishTime
                 }
                 >
-            {this.state.date}
+            {dateCountDown(this.state.date)}
             </div>
         )
     }
