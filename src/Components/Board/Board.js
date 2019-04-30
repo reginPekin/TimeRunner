@@ -1,7 +1,7 @@
 import React from "react";
 import {Task} from "../BoardTask"
 import styles from "./Board.module.css"
-import {MinDate} from "../../Utils/MInDate"
+import {minDate} from "../../Utils/minDate"
 
 export class Board extends React.Component {
   constructor(props) {
@@ -21,7 +21,7 @@ export class Board extends React.Component {
 
   onSubmit = (event) => {
     event.preventDefault() //не обновляй-ка
-    console.log(MinDate())
+    console.log(minDate())
     
     const newTask = {
       id: this.state.tasks.length + 1,
@@ -51,7 +51,7 @@ export class Board extends React.Component {
         </article>
         <form>
           <input 
-            className = {styles.task_name}
+            className = {styles.taskName}
             type="text" 
             placeholder="Your next task"
             value = {this.state.value}
@@ -61,7 +61,7 @@ export class Board extends React.Component {
           
           <input
             type="date"
-            min = {MinDate()}
+            min = {minDate()}
             date={this.state.startDate} 
             onChange={event => this.onDateChange(event)}
           />

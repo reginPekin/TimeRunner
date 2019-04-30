@@ -1,4 +1,4 @@
-export const MinDate = () => {
+export const minDate = () => {
     let minDate = ""
     let month = ""
     let day = ""
