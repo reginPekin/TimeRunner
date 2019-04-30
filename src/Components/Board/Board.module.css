@@ -9,7 +9,7 @@ article.board {
     margin: 0.5em 1em;
   }
 
-  .task_name {
+  .taskName {
     flex: 4;
     background-color: #DBBBBA;
     color: #4D1510;
