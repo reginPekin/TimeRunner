@@ -4,8 +4,12 @@ import {myWidth} from "../../Utils/myWidth"
 
 export const TaskProgress= (props) =>{
     return (
-        <div className={styles.task_progress} style={{width: myWidth(props.task.startTime, props.task.finishTime)}}>
-        {/* empty space */} 
+        <div className={styles.taskBorder}>
+            <div 
+                className={styles.taskProgress} 
+                style={{width: myWidth(props.task.startTime, props.task.finishTime)}}>
+                {/* empty space */} 
+            </div>
         </div>
     );
 }

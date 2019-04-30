@@ -13,12 +13,12 @@ const tasks = [
         id:2,
         name: "line",
         startTime: "April 28, 2019 23:39:00",
-        finishTime: "May 2, 2019 23:08:60"
+        finishTime: "May 1, 2019 23:07:23"
     },
     {
         id:3,
         name: "color",
-        startTime: "May 2, 2019 23:39:00",
+        startTime: "April 7, 2019 23:39:00",
         finishTime: "May 5, 2019 23:39:00",
     },
 ]

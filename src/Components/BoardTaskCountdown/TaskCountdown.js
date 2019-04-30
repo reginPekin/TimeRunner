@@ -39,7 +39,7 @@ export class TaskCountdown extends React.Component {
                 " finish time: " + this.state.finishTime
                 }
                 >
-            {dateCountDown(this.state.date)}
+            {dateCountDown(this.state.date, this.state.startTime.getTime())}
             </div>
         )
     }
