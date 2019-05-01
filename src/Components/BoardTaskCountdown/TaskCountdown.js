@@ -8,9 +8,9 @@ export const TaskCountdown = (props) => {
         <div className={styles.taskCountdown}>
             {dateCountDown
             (
-                new Date(props.startTime).getTime(), 
-                new Date(props.finishTime).getTime(),
-                props.currentTime
+                new Date(props.task.startTime).getTime(), 
+                new Date(props.task.finishTime).getTime(),
+                props.task.currentTime
             )
             }
         </div>
