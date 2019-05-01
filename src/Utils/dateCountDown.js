@@ -1,4 +1,5 @@
-export const dateCountDown = (date, start) => {
+export const dateCountDown = (start, finish, current) => {
+  const date = finish - current
   const sec = Math.floor(date/1000)
   const min = Math.floor(sec/60)
   const hour = Math.floor(min/60)

@@ -7,7 +7,7 @@ export const Task = (props) => {
     return(
         <div className={styles.task}> 
             <TaskDescription task={props.task}/>
-            <TaskCountdown task={props.task}/>
+            <TaskCountdown startTime={props.task.startTime} finishTime={props.task.finishTime} currentTime={props.task.currentTime}/>
             
             <button onClick={props.onDelete}>Х</button>
         </div>
