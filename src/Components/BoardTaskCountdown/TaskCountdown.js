@@ -6,13 +6,11 @@ import {dateCountDown} from "../../Utils/dateCountDown"
 export const TaskCountdown = (props) => {
     return(
         <div className={styles.taskCountdown}>
-            {dateCountDown
-            (
+            {dateCountDown(
                 new Date(props.task.startTime).getTime(), 
                 new Date(props.task.finishTime).getTime(),
                 props.task.currentTime
-            )
-            }
+            )}
         </div>
     )
 }
