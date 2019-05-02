@@ -1,7 +1,8 @@
 import React from "react";
 import {Task} from "../BoardTask"
 import styles from "./Board.module.css"
-import {minDate} from "../../Utils/minDate"
+import {formatDate} from "../../Utils/dateConvert"
+// import {minDate} from "../../Utils/minDate"
 
 export class Board extends React.Component {
   constructor(props) {
@@ -9,9 +10,7 @@ export class Board extends React.Component {
       this.state = {
         tasks: this.props.tasks,
         value:"",
-        startDate:"",
-        finishDate: ""
-       
+        startDate:""
       }
   }
 
@@ -21,20 +20,31 @@ export class Board extends React.Component {
 
   onSubmit = (event) => {
     event.preventDefault() //не обновляй-ка
-    console.log(minDate())
-    
+    console.log(this.state.startDate)
     const newTask = {
       id: this.state.tasks.length + 1,
       name: this.state.value,
-      startTime: this.state.startDate,
-      finishTime: this.state.finishDate
+      startTime: formatDate('DD, YYYY HH:mm:ss',new Date(this.state.startDate),true),
+      finishTime: formatDate('DD, YYYY HH:mm:ss',new Date(this.state.finishDate),true),
+      difference: new Date(this.state.finishDate).getTime() - new Date().getTime() 
     }
     this.setState({tasks: [ ...this.state.tasks, newTask]})
   }
 
+  componentDidMount() {
+    this.timerID = setInterval(
+      () => this.tick(),
+      1000
+    );
+  }
+
+  tick() {
+    this.setState({
+    });
+  }
+
   onDelete = (id) => 
     this.setState({tasks: this.state.tasks.filter(task => task.id !== id)})
-
 
   render() {
 
@@ -61,7 +71,7 @@ export class Board extends React.Component {
           
           <input
             type="date"
-            min = {minDate()}
+            // min = {minDate()}
             date={this.state.startDate} 
             onChange={event => this.onDateChange(event)}
           />
