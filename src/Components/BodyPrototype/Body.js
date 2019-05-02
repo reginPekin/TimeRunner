@@ -9,7 +9,7 @@ export const Body = (props) => {
         <div>TimeFriend</div>
       </header>
       <Container tasks={props.tasks}/>
-      <footer></footer>
+      {/* <footer></footer> */}
     </div>
   );
 }

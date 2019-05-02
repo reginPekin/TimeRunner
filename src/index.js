@@ -6,20 +6,20 @@ const tasks = [
     {
         id:1,
         name: "sketch",
-        startTime: "April 26, 2019 23:39:00",
+        startTime: "May 2, 2019 19:14:00",
         finishTime: "April 29, 2019 23:57:00"
     },
     {
         id:2,
         name: "line",
-        startTime: "April 28, 2019 23:39:00",
-        finishTime: "May 1, 2019 23:07:23"
+        startTime: "April 30, 2019 23:39:00",
+        finishTime: "May 2, 2019 23:07:23"
     },
     {
         id:3,
         name: "color",
-        startTime: "April 7, 2019 23:39:00",
-        finishTime: "May 5, 2019 23:39:00",
+        startTime: new Date().getTime(),
+        finishTime: new Date().getTime() + 100000,
     },
 ]
 

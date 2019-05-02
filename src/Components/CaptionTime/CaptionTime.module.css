@@ -3,4 +3,5 @@
     width: 8em;
     background-color: rgb(80, 136, 2);
     border-radius: 20px;
+    align-items: left; 
 }
