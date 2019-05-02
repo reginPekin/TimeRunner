@@ -2,14 +2,14 @@ import React from "react";
 import styles from "./Caption.module.css";
 import {CaptionTime} from "../CaptionTime"
 
-export const Caption = () => {
+export const Caption = (props) => {
   return (
     <main>
       <div className = {styles.caption}>
-        <div className = {styles.caption_name}>
+        <div className = {styles.captionName}>
           Project Name
         </div>
-        <CaptionTime/>
+        <CaptionTime task={props.task}/>
       </div>
     </main>
   );
