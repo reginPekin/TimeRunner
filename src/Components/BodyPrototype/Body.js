@@ -5,9 +5,9 @@ import { Container } from "../Container";
 export const Body = (props) => {
   return(
     <div className={styles.bodyProt}>
-      <header>
+      {/* <header>
         <div>TimeFriend</div>
-      </header>
+      </header> */}
       <Container tasks={props.tasks}/>
       {/* <footer></footer> */}
     </div>
