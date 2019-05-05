@@ -21,3 +21,11 @@ article.board {
   form {
     margin-left: 1.5em
   }
+
+  .buttonM{
+    visibility: hidden
+  }
+
+  .title:hover .buttonM {
+    visibility: visible;
+  }
