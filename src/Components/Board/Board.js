@@ -75,7 +75,7 @@ export class Board extends React.Component {
       <div>
         <main>
           {/* <div className = {style.caption}>  */} <div>
-            {/* <div className = {style.captionName}> */} <div>
+            <div className = {style.captionName}>
               <form onSubmit={(event) => {
                 console.log(event)
                 event.preventDefault();
