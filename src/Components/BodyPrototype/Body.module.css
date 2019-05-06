@@ -1,6 +1,6 @@
 .bodyProt {
+  background-color: #CECFD2;
   height: 100%;
-  width: 100%;
 }
 
 header {
@@ -9,7 +9,7 @@ header {
   flex-flow: row-reverse nowrap;
   padding: 1em 2em 1em 0; 
   height: 1.5rem;
-  background-color: #232931;
+  background-color: #F4D5C3;
   color: #F0ECE2;
   top: 0px;
   right: 0px;

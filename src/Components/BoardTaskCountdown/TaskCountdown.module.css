@@ -1,10 +1,12 @@
+@font-face{
+  font-family: 'Serif';
+  src: url('../../Fonts/PT_Serif-Web-Regular.ttf') format('truetype');
+}
+
 .taskCountdown {
-    font-size: 1.3rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bold;
-  
+    font-size: 1.1rem;
+    font-family: 'Serif';
     display: flex;
-    flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
     width: 25%;

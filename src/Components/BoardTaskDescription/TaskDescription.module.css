@@ -1,3 +1,8 @@
+@font-face{
+  font-family: 'Serif';
+  src: url('../../Fonts/PT_Serif-Web-Regular.ttf') format('truetype');
+}
+
 .task_description{
     display: flex;
     flex-flow: column nowrap;
@@ -5,12 +10,12 @@
   }
   
   .task_name {
-    flex: 4;
-    background-color: #DBBBBA;
-    color: #4D1510;
+    flex: 3;
+    background-color: #F0F2E7;
+    color: #FA4D53;
     border-radius:20px;
-    margin-bottom: 3%;
-    font-family: Marion;
+    margin-bottom: 0.5em;
+    font-family: 'Serif';
   }
 
   p {
