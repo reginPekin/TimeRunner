@@ -1,0 +1,8 @@
+.task {
+    display: flex;
+    flex:0 0 auto;
+    max-width: 100%;
+    justify-content: space-around;
+    height: 4.5em;
+    margin: 1em
+  }

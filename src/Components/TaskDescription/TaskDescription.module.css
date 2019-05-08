@@ -1,0 +1,40 @@
+@font-face{
+  font-family: 'Serif';
+  src: url('../../Fonts/PT_Serif-Web-Regular.ttf') format('truetype');
+}
+
+.task_description{
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 5;
+    margin: 0 1em 0 1em; 
+  }
+  
+  .task_name {
+    display: flex;
+    background-color: #fafafb;
+    color: #0baa9a;
+    border-radius:20px;
+    margin-bottom: 0.5em;
+    font-family: 'Serif';
+  }
+
+  p {
+    text-align: center;
+    flex: 7
+  }
+
+  button {
+    display: none;
+  }
+
+  .task_name:hover > button {
+    display: block;
+
+    flex: 2;
+    color: #0baa9a;
+    font-family: 'Serif';
+    border-radius: 20px;
+    border-color: #ffffff;
+  } 
+
