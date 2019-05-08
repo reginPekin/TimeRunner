@@ -1,33 +1,18 @@
 .bodyProt {
-  background-color: #CECFD2;
+  background-color: #ffffff;
   height: 100%;
-}
-
-header {
-  font-size: 1.3rem;
   display: flex;
-  flex-flow: row-reverse nowrap;
-  padding: 1em 2em 1em 0; 
-  height: 1.5rem;
-  background-color: #F4D5C3;
-  color: #F0ECE2;
-  top: 0px;
-  right: 0px;
-  left:0px;
-  position: fixed;
+  flex-direction: column; 
+  max-width: 100%;
 }
 
-header > div {
-  display: flex;
-  align-items: center;
-}
 
-footer{
-  height:1.9em;
-  background-color: #232931;
+/* footer{
+  flex: 1;
+  background-color: #00b97f;
   color: #F0ECE2;
   width: 100%;
   left:0px;
   bottom: 0px;
   position: fixed;
-}
+} */
