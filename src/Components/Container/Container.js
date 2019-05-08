@@ -1,5 +1,5 @@
 import React from "react";
-import {Caption} from "../Caption"
+// import {Caption} from "../Caption"
 import {Board} from "../Board"
 import styles from "./Container.module.css"
 

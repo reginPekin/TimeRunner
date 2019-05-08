@@ -1,5 +1,5 @@
 import React from "react";
-import {Task} from "../BoardTask"
+import {Task} from "../Task"
 import styles from "./Board.module.css"
 import {formatDate} from "../../Utils/dateConvert"
 import style from "../Caption/Caption.module.css"
@@ -25,7 +25,6 @@ export class Board extends React.Component {
   onDateChange = (event)  => this.setState({startDate: event.target.value})
   onDateFinishChange = (event)  => 
     {
-      console.log(event.target.value)
       this.setState({finishDate: event.target.value});
       this.onDisable(); 
     }
@@ -76,21 +75,29 @@ export class Board extends React.Component {
         <main>
           {/* <div className = {style.caption}>  */} <div>
             <div className = {style.captionName}>
+
               <form onSubmit={(event) => {
-                console.log(event)
                 event.preventDefault();
                 this.setState({isDisplayed: !this.state.isDisplayed});
-                
-              }}
-                >
-                <input
-                 placeholder="Project Name" style={{display: this.state.isDisplayed ? "none" : "block"}} 
-                              onChange={event => this.onProjectChange(event)}></input>
+              }}>
+
+                <input 
+                  className={styles.inputic}
+                  placeholder="Project Name" 
+                  style={{display: this.state.isDisplayed ? "none" : "block"}} 
+                  onChange={event => this.onProjectChange(event)}>
+                </input>
               </form>
-              &nbsp;<p className={styles.title} style={{display: this.state.isDisplayed ? "block" : "none"}}>
-                      {this.state.projectName} 
-                      <button style={{}} className={styles.buttonM} onClick={() => this.setState({isDisplayed: !this.state.isDisplayed})}>Х</button>
-                    </p>
+
+              &nbsp;
+              
+              <p 
+                className={styles.title} 
+                style={{display: this.state.isDisplayed ? "block" : "none"}}>
+                  {this.state.projectName} 
+                  <button className={styles.buttonM} onClick={() => this.setState({isDisplayed: !this.state.isDisplayed})}>X</button>
+              </p>
+
             </div>
             <CaptionTime task={this.state.tasks}/>
           </div>
@@ -105,6 +112,7 @@ export class Board extends React.Component {
               />;
           })}
         </article>
+
         <form>
           <input 
             className = {styles.taskName}
@@ -112,26 +120,34 @@ export class Board extends React.Component {
             placeholder="Your next task"
             value={this.state.value}
             onChange={event => this.onChange(event)}
-
           />
+
           <br/>
-          
+
           <input
+            style={{border:"none"}}
             type="date"
             // min = {minDate()}
             value={this.state.startDate} 
             onChange={event => this.onDateChange(event)}
           />
+
           <br/>
+
           <input
+            style={{border:"none"}}
             type="date"
             value={this.state.finishDate} 
             min = {this.state.startDate}
             onChange={event => this.onDateFinishChange(event)}
-                                
           />
+          
           <br/>
-          <button disabled={this.state.isDisabled} onClick={event => this.onSubmit(event)} >Push</button>
+
+          <button disabled={this.state.isDisabled} onClick={event => this.onSubmit(event)}>
+            Push
+          </button>
+          
           </form>
       </div>
     );
