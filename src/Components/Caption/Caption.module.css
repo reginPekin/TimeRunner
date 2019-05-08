@@ -9,30 +9,16 @@
 }
 
 main{
-  background-color:#FEAC97; 
+  background-color: #00b97f;
   opacity: 0.65;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-
-
-main > .caption {
-  display: flex;
-  flex: 0 0 auto;
-  flex-flow: column nowrap;
-  background-color: rgb(23, 43, 31);
-  color: #FA4D53;
-  padding: 0.5em;
-  width: 63%;
-  border-radius: 20px;
-  font-size: 2.5em;
-  font-family: Marion Bold;
+  border-radius: 0px 0px 80px 0px;
 }
 
 .captionName{
   text-align: center;
   font-family: 'MontserratBold';
-  font-size: 1em;
-  color: #ED5B46
+  font-size: 2em;
+  color: #ffffff
 }

@@ -1,7 +1,8 @@
 .caption_time{
-    height: 0.3em;
+    height: 0.7em;
     width: 8em;
-    background-color: rgb(80, 136, 2);
+    background-color: #ffffff;
     border-radius: 20px;
     align-items: left; 
+    margin-bottom: 1em
 }
