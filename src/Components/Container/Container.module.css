@@ -1,6 +1,6 @@
 .container {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: baseline;
   min-height: 100%;
+  max-width: 100%;
 }
