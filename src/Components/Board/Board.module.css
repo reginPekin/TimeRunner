@@ -1,31 +1,44 @@
 article {
   max-height: 67%;
+  
 }
 
 article.board {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-around;
     margin: 0.5em 1em;
+    
   }
 
   .taskName {
-    flex: 4;
-    background-color: #F4B7B6;
-    color: #4D1510;
-    border-radius:20px;
-    margin-bottom: 3%;
-    font-family: Marion;
+      background-color: #fafafb;
+      color: #0baa9a;
+      border-radius:20px;
+      margin-bottom: 0.5em;
+      font-family: 'Serif';
+      border: 0px;
+      text-align: center;
   }
 
   form {
-    margin-left: 1.5em
+    margin-left: 2em
   }
 
-  .buttonM{
-    visibility: hidden
+  /* .buttonM{
+    visibility: hidden;
   }
 
   .title:hover .buttonM {
     visibility: visible;
-  }
+  } */
+
+  /* .inputic {
+      text-align: center;
+      font-family: 'MontserratBold';
+      color: #00b97f;
+      border-radius:20px;
+      font-size: 1em;
+      width: 6em;
+      margin: 1em
+    }
+   */
