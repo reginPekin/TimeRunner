@@ -1,26 +1,27 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import {Body} from "./Components/BodyPrototype"
+import {App} from "./Components/App"
+import './styles/index.css'
 
 const tasks = [
     {
         id:1,
-        name: "sketch",
+        name: "Vanya",
         startTime: new Date().getTime(),
         finishTime: new Date().getTime() + 1000000000
     },
     {
         id:2,
-        name: "line",
+        name: "Vanechka",
         startTime: "April 30, 2019 23:39:00",
         finishTime: "May 4, 2019 23:07:23"
     },
     {
         id:3,
-        name: "color",
+        name: "Malysh",
         startTime: new Date().getTime(),
         finishTime: new Date().getTime() + 100000,
     },
 ]
 
-ReactDOM.render(<Body tasks = {tasks}/>, document.getElementById('root'))
+ReactDOM.render(<App initialTasks={tasks}/>, document.getElementById('root'))
