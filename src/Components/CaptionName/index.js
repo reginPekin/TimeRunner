@@ -1,0 +1,1 @@
+export {CaptionName} from "./CaptionName"
