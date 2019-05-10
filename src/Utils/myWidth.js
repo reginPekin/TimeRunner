@@ -1,8 +1,7 @@
-export const myWidth = (startTime, finishTime) => {
+export const myWidth = (startTime, finishTime, currentTime) => {
   let finish = new Date(finishTime).getTime();
   let start = new Date(startTime).getTime();
   let fullTime = finish - start;
-  let currentTime = new Date().getTime();
   let distance = finish - currentTime;
 
   if (start < currentTime) {
