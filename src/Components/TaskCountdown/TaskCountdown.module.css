@@ -1,28 +1,22 @@
-@font-face{
-  font-family: 'Serif';
-  src: url('../../Fonts/PT_Serif-Web-Regular.ttf') format('truetype');
+.taskCountdown {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  
 }
 
-.taskCountdown {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    
-  }
-
-  .countdown{
-    flex:2;
-
-    font-size: 1.1rem;
-    font-family: 'Serif';
-    color: #666666;
-  }
+.countdown{
+  flex:2;
+  font-size: 1.1rem;
+  color: #666666;
+}
   
-  .hidden {
-    display: none
-  }
+.hidden {
+  display: none;
+}
 
-  .taskCountdown:hover .hidden{
-    display: block;
-    font-size: 0.5em;
-  }
+.taskCountdown:hover .hidden{
+  display: flex;
+  flex-direction: column;
+  font-size: 0.5em;
+}

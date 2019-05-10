@@ -1,0 +1,20 @@
+.header{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--green);
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 0px 80px 0px;
+  height: 9em;
+}
+
+
+
+/* .buttonM{
+    visibility: hidden;
+  }
+
+  .title:hover .buttonM {
+    visibility: visible;
+} */
+

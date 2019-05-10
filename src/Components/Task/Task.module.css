@@ -3,6 +3,7 @@
     flex:0 0 auto;
     max-width: 100%;
     justify-content: space-around;
-    height: 4.5em;
+    align-items: center;
+  
     margin: 1em
   }

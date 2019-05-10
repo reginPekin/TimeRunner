@@ -1,40 +1,36 @@
-@font-face{
-  font-family: 'Serif';
-  src: url('../../Fonts/PT_Serif-Web-Regular.ttf') format('truetype');
-}
-
-.task_description{
+.taskDescription{
     display: flex;
     flex-flow: column nowrap;
     flex: 5;
-    margin: 0 1em 0 1em; 
+    margin: 0em 1em; 
   }
   
-  .task_name {
-    display: flex;
-    background-color: #fafafb;
-    color: #0baa9a;
-    border-radius:20px;
-    margin-bottom: 0.5em;
-    font-family: 'Serif';
-  }
+.taskName {
+  display: flex;
+  background-color: #fafafb;
+  color: var(--green);
+  border-radius:20px;
+  margin-bottom: 0.5em;
+}
 
-  p {
-    text-align: center;
-    flex: 7
-  }
+.spanName {
+  text-align: center;
+  padding: 0.5em;
+  flex: 7;
+}
 
-  button {
-    display: none;
-  }
+.deleteTask {
+  display: none;
+}
 
-  .task_name:hover > button {
-    display: block;
+.taskName:hover > .deleteTask {
+  display: block;
 
-    flex: 2;
-    color: #0baa9a;
-    font-family: 'Serif';
-    border-radius: 20px;
-    border-color: #ffffff;
-  } 
+  flex: 2;
+  color: var(--green);
+  border-radius: 20px;
+  border-color: #ffffff;
+  outline: none;
+  
+} 
 
