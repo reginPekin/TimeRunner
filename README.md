@@ -1,4 +1,7 @@
-<h2>TimeRunner<h1> - the project for setting deadlines and getting the motivation to avoid wasting of time.
+<h1>TimeRunner<h1>
+  
+**TimeRunner** - save your time
+The project for setting deadlines and getting the motivation to avoid wasting of time.
 It allows you to create new tasks with data, to delete unnecessary tasks and to watch how time is running out.
 <br/>
 
