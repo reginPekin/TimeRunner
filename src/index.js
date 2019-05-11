@@ -6,21 +6,21 @@ import './styles/index.css'
 const tasks = [
     {
         id:1,
-        name: "Vanya",
-        startTime: new Date().getTime(),
-        finishTime: new Date().getTime() + 1000000000
+        name: "First task",
+        startTime: "April 30, 2019 23:39:00",
+        finishTime: "May 1, 2019 14:12:00",
     },
     {
         id:2,
-        name: "Vanechka",
-        startTime: "April 30, 2019 23:39:00",
-        finishTime: "May 4, 2019 23:07:23"
+        name: "Second task",
+        startTime: "May 1, 2019 14:12:00",
+        finishTime: "May 13, 2019 17:38:00",
     },
     {
         id:3,
-        name: "Malysh",
-        startTime: new Date().getTime(),
-        finishTime: new Date().getTime() + 100000,
+        name: "Third task",
+        startTime: "May 13, 2019 17:38:00",
+        finishTime: "May 25, 2019 01:03:00",
     },
 ]
 
