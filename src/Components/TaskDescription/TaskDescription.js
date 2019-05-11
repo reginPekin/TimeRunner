@@ -20,7 +20,7 @@ export const TaskDescription = ({ task, onDelete, currentTime }) => (
     </div>
 
     <div className={styles.hidden}>
-      <span>start: {task.startTime} finish: {task.finishTime}</span>
+      <span>Start date: {task.startTime}    Finish date: {task.finishTime}</span>
     </div>
   </div>
 )
