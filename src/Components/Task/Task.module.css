@@ -7,3 +7,13 @@
   
     margin: 1em
   }
+
+.hidden {
+  display: none;
+}
+
+.Task:hover .hidden{
+  display: flex;
+  flex-direction: column;
+  font-size: 0.5em;
+}

@@ -6,7 +6,7 @@ import { CaptionTime } from "../CaptionTime";
 
 export const TaskDescription = ({ task, onDelete, currentTime }) => (
   <div className={styles.taskDescription}>
-
+    <div>
     <div className={styles.taskName}>
       <span className={styles.spanName}>{task.name}</span>
       <button className={styles.deleteTask} onClick={onDelete}>Х</button>
@@ -17,5 +17,10 @@ export const TaskDescription = ({ task, onDelete, currentTime }) => (
       finishTime={task.finishTime}
       currentTime={currentTime}
     />
+    </div>
+
+    <div className={styles.hidden}>
+      <span>start: {task.startTime} finish: {task.finishTime}</span>
+    </div>
   </div>
 )

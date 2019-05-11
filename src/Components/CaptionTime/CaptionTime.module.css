@@ -1,6 +1,12 @@
 .captionTime{
-    height: 0.7em;
-    border-radius: 20px;
-    align-items: left; 
-    margin-bottom: 1em;
+  height: 0.7em;
+  border-radius: 20px;
+  align-items: left; 
+  margin-bottom: 1em;
+}
+
+.greenLineBorder{
+  border: 1px solid red;
+  border-radius: 20px;
+  height: 10px;
 }
