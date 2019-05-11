@@ -1,7 +1,8 @@
 .formic {
   display: flex;
   flex-direction: column;
-  margin-left: 2em;
+  margin-left: 3em;
+  width: 10em;
 }
 
 .taskName {
@@ -9,7 +10,7 @@
   }
   
  .taskName input {
-    width: 6.5em;
+    width: 10em;
     color: var(--green);
     font-size: inherit;
     font-family: inherit;
@@ -42,3 +43,5 @@
     transform-origin: bottom left;
     transform: scaleX(1);
   }
+
+  
