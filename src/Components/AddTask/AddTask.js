@@ -8,13 +8,15 @@ export const AddTask = ({text, startDate, finishDate, onSubmit}) => {
   return(
     <form className={styles.formic}>
 
+      <div className={styles.taskName}>
       <input 
-        className = {styles.taskName}
         type="text" 
         placeholder="Your next task"
         value={text.value}
         onChange={text.onChange}
       />
+      <span></span>
+      </div>
       
       <input
         style={{border:"none"}}
