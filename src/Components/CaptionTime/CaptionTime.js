@@ -9,17 +9,12 @@ export const CaptionTime = ({
   finishTime, 
   currentTime = Date.now(), 
   color = 'green'}) =>(
-    <div 
-      // className={styles.greenLineBorder}
-      // style={{borderColor: color === 'green' ? '#0baa9a' : 'white'}}
-    >
-      <div 
-        className = {styles.captionTime}
-        style={{
-          width: myWidth(startTime, finishTime, currentTime),
-          backgroundColor: color === 'green' ? '#0baa9a' : 'white',
-        }}
-      >
-      </div>
-    </div>
+  <div 
+    className = {styles.captionTime}
+    style={{
+      width: myWidth(startTime, finishTime, currentTime),
+      backgroundColor: color === 'green' ? '#0baa9a' : 'white',
+    }}
+  >
+  </div>
 )
